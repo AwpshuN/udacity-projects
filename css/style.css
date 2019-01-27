@@ -1,0 +1,194 @@
+body {
+
+    /* Font CSS  */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+    /* Padding and Margin */
+    padding: 0;
+    margin: 0;
+
+    /* Background */
+    background-color: #f4f4f4;
+}
+
+/* Global Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.highlight {
+    color: orangered;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+}
+.sub-but {
+    height: 38px;
+    background-color: orangered;
+    border: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Header */
+header {
+    background: #354243;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: orangered 3px solid;
+}
+
+header .menu-items a {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .menu-items a:hover {
+    color: orangered;
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #logo-text {
+    float: left;
+}
+
+header #logo-text h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Showcase */
+
+#showcase {
+    min-height: 100vh;
+    background: url('/images/showcase.png') no-repeat 0 -150px;
+    text-align: center;
+    color: #fff;   
+}
+
+#showcase h1{
+    margin-top: 30vh;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Login */
+
+#login {
+    padding: 15px;
+    color: white;
+    background-color: #354243;
+    border-bottom: orangered 3px solid;
+}
+
+#login h1 {
+    float:left;
+}
+
+#login form{
+    float: right;
+    margin-top: 15px;
+}
+
+#login input{
+    padding: 4px; 
+    height: 25px;
+    width: 250px;
+}
+
+/* Cards */
+
+#cards .container-flex {
+    display:flex;
+    margin: 0 auto;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#cards .container-flex div{
+    padding: 10px;
+}
+
+#cards .card {
+    flex-basis: 20%;
+}
+
+#cards .card img{
+    width: 100%;
+    height: 200px;   
+}
+
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: orangered;
+    text-align: center;
+}
+
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+    header #logo-text,header nav, header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+
+    }
+    
+    header {
+        padding-bottom: 20px;
+    }
+    .no-mob{
+            display:none;
+        }
+}
+
+@media(max-width: 819px){
+    #login h1, #login form {
+        float: none;
+        text-align: center;
+    }
+}
+
+    
